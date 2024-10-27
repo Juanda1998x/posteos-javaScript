@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posteos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>web posteos</h1>
+
+
+    <form id="posteoForm" onsubmit="event.preventDefault(); postData()">
+
+        <h3>Que estas pensando?</h3>
+        <label for="postTitulo">Titulo</label>
+        <input type="text" id="inputTitulo" required>
+        <label for="postComentario">comentario</label>
+        <textarea type="text" id="inputComentario" required></textarea>
+        <button type="submit">enviar</button>
+
+    </form>
+
+    <ul id="lista"></ul>
+
+  
+
+
+    <script src="script.js"></script>
+</body>
+</html>
